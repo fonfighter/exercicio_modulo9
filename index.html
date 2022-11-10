@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/lista.png" alt="Lista">
+            <h1>Lista de Tarefas</h1>
+        </header>
+        <form id="form-tarefa">
+            <input type="text" id="nome-tarefa" required placeholder="descrição da tarefa" />      
+            <button type="submit">Cadastrar +</button>
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        <h1>TAREFA:</h1>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="task">-x-</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+<script src="./main.js"></script>
+</body>
+</html>
