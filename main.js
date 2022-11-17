@@ -4,10 +4,11 @@ const form = document.getElementById('form-tarefa');
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const inputNomeTarefa = document.getElementById('nome-tarefa');
-    const corpoTabela = document.querySelector('tbody');
-    const novaTarefa = $('<td></td>');
-    $(`inputNomeTarefa`).appendTo(novaTarefa);
+    const lista = document.querySelector('ul');
+    const inputNomeTarefa = $('#nome-tarefa').val();
+    const novaTarefa = $('<h2></h2>');
+    
+    $(`<li>${inputNomeTarefa}</li>`).appendTo(novaTarefa);
 
     $(novaTarefa).click(function() {
 
